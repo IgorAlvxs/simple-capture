@@ -1,0 +1,14 @@
+# Build (PyInstaller + ícone)
+build/dist/
+build/work/
+build/*.spec
+build/logo.ico
+
+# Saída antiga na raiz (se existir)
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/

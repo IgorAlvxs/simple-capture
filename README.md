@@ -35,11 +35,13 @@ Os controles aparecem ao mover o mouse e somem sozinhos após alguns segundos; e
 
 Pipeline: câmera → thread de captura → textura OpenGL → tela.
 
-## Gerar .exe
+## Gerar .exe (com ícone)
+
+Coloque `logo.png` na pasta `build/` e rode:
 
 ```bash
-pip install pyinstaller
-pyinstaller --onefile --noconsole simple-capture.py
+pip install pyinstaller pillow
+python build/build.py
 ```
 
-Executável em `dist/simple-capture.exe`.
+O script converte `logo.png` em `logo.ico`, gera o executável em `build/dist/Simple Capture.exe` e remove os arquivos temporários (work/, *.spec, logo.ico), deixando só o exe.
